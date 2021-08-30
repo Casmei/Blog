@@ -1,0 +1,26 @@
+<!--Herdar o conteúdo do arquivo base.html-->
+{% extends "blog/base.html" %}
+
+<!--Passar o title do Heade-->
+{% block title %} CodeAlms 💻 {% endblock%} 
+
+<!--Conteudo que vai preencher o main-->
+{% block content %}
+    <!--Para cada post-->
+    {% for post in post_list %}
+    <article>
+        <!--Para cada post coloque o titulo dele-->
+        <h2>
+            <a href="{{ post.get_absolute_url }}">
+                {{ post.title }}
+            </a>
+        </h2>
+        <!--Para cada post coloque a dara e o autor-->
+        <p class='date'>
+            Publicado em {{ post.created }} por {{ post.author }}
+        </p>
+        <!--Para cada post coloque o texto-->
+        {{ post.body|linebreaks|truncatewords:10 }}
+    </article>
+    {% endfor %}
+{% endblock %}
