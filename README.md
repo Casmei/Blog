@@ -1,6 +1,7 @@
 # Projeto Blog
 ## Objetivo
-Inicialmente o projeto foi desenvolvido com o enfoque educacional, visando a aprendizagem e o treinamento de conceitos previamente estudados. Seu propósito é inteiramente **educativo e expositivo**.
+Inicialmente o projeto foi desenvolvido como um objeto de estudo, visando a aprendizagem e o treinamento.
+Seu propósito é inteiramente **educativo e expositivo**.
 
 
 ## Proposta
